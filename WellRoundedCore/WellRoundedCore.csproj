@@ -4,4 +4,28 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Pages\PostTemplates\" />
+    <None Remove="Data\Posts\" />
+    <None Remove="Data\Images\" />
+    <None Remove="Data\Posts\2022-04-03_TestPostOne\" />
+    <None Remove="Markdig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="Pages\PostTemplates\" />
+    <Folder Include="wwwroot\css\PostTemplates\" />
+    <Folder Include="Data\Posts\" />
+    <Folder Include="Data\Images\" />
+    <Folder Include="Data\Posts\2022-04-03_TestPostOne\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\js\" />
+    <Content Remove="wwwroot\css\PostTemplates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Markdig" Version="0.28.1" />
+  </ItemGroup>
 </Project>

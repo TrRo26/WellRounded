@@ -1,0 +1,16 @@
+﻿@using WellRoundedCore.Models
+@using WellRoundedCore.Data.Posts
+
+<h3>Post General Layout</h3>
+
+<h1 id="post-general-title">@post.Metadata.Title</h1>
+<h3 id="post-general-subtitle">@post.Metadata.SubTitle</h3>
+<h5 id="post-general-author">@post.Metadata.Author</h5>
+<h5 id="post-general-date">@post.Metadata.Date</h5>
+@*<h5 id="post-general-tags">@Html.Raw(post.Metadata.Tags)</h5>   LEFT OFF HERE. NEED TO DISPLAY AS HTML NOT STRING*@
+
+<h4 id="post-general-body">@post.Body</h4>
+
+@code {
+    Post post = TestPostOne.GetPost();
+}
